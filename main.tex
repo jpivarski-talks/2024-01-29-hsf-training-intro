@@ -22,6 +22,7 @@
 \usepackage{minted}
 \usepackage[thicklines]{cancel}
 \usepackage{fancyvrb}
+\usepackage{ulem}
 
 \xdefinecolor{dianablue}{rgb}{0.18,0.24,0.31}
 \xdefinecolor{darkblue}{rgb}{0.1,0.1,0.7}
@@ -32,7 +33,7 @@
 \definecolor{darkgreen}{rgb}{0,0.6,0}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
-\title[2024-01-29-hsf-training-intro]{HSF Training meeting}
+\title[2024-01-29-hsf-training-intro]{Last week I wasn't prepared, but today I have slides! \\ \vspace{0.25 cm}\large (Not the same thing\ldots)}
 \author{Jim Pivarski}
 \institute{Princeton University -- IRIS-HEP}
 \date{January 29, 2024}
@@ -56,9 +57,47 @@
 
 % START START START START START START START START START START START START START
 
-\begin{frame}{First slide}
+\begin{frame}{Main issues, as I understand them (each on its own page)}
+\large
 \vspace{0.5 cm}
-HERE
+\begin{enumerate}\setlength{\itemsep}{0.2 cm}
+\item Online ``Analysis \sout{Preservation} Pipelines'' Training, February 26--29.
+\item Go live with the new Training Center website [\href{https://github.com/hsf-training/training-center}{\textcolor{blue}{repo}}, \href{https://hepsoftwarefoundation.org/training/center.html}{\textcolor{blue}{old}}, \href{https://main--nimble-pothos-1ee962.netlify.app/}{\textcolor{blue}{new}}].
+\item Diversify types of events: basics are well-covered, last machine learning course was over 3 years ago.
+\item New presenters: perpetual. I liked the pay-to-teach idea, and I'm willing to look for grants to implement that.
+\item Maintaining material: perpetual. Is this coupled with Software Carpentry subscription?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Online ``Analysis \sout{Preservation} Pipelines'' Training, February 26--29}
+\vspace{0.5 cm}
+\begin{itemize}\setlength{\itemsep}{0.2 cm}
+\item \textcolor{darkblue}{Michel}: Docker training, Docker $\to$ Podman and removing dependence on CI/CD.
+\item \textcolor{darkblue}{Marco}: Apptainer (Singularity) training, removing dependence on CI/CD.
+\item \textcolor{darkblue}{Andres}: CI/CD GitHub training, removing dependence on containerization.
+\item \textcolor{darkblue}{Richa}: CI/CD GitLab training, removing dependence on containerization.
+\item \textcolor{darkblue}{Michael}: reviewing all changes.
+\item \textcolor{darkblue}{Jim}: setting up Indico/Zoom, scheduling sessions, making announcements.
+\item Record new videos live at the event (unless anyone wants to do it beforehand), lightly edit, and link to the updated materials.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Diversify types of events}
+\vspace{0.2 cm}
+\begin{columns}[t]
+\column{0.55\linewidth}
+\includegraphics[width=\linewidth]{training-3years.png}
+
+\column{0.55\linewidth}
+\only<1>{\includegraphics[width=\linewidth]{all-offerings.png}}\only<2->{\includegraphics[width=\linewidth]{all-offerings-2.png}}
+
+\begin{center}
+\vspace{-7.25 cm}
+\uncover<3->{\only<3>{\includegraphics[width=0.9\linewidth]{all-offerings-3.png}}\only<4>{\includegraphics[width=0.9\linewidth]{all-offerings-4.png}}}
+\vspace{7.25 cm}
+\end{center}
+
+\end{columns}
 \end{frame}
 
 \end{document}
