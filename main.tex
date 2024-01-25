@@ -66,6 +66,7 @@
 \item Diversify types of events: basics are well-covered, last machine learning course was over 3 years ago.
 \item New presenters: perpetual. I liked the pay-to-teach idea, and I'm willing to look for grants to implement that.
 \item Maintaining material: perpetual. Is this coupled with Software Carpentry subscription?
+\item Communication: HSF Training Slack is fine for events, but maybe IRIS-HEP Slack (paid) for preparation?
 \end{enumerate}
 \end{frame}
 
@@ -80,6 +81,17 @@
 \item \textcolor{darkblue}{Jim}: setting up Indico/Zoom, scheduling sessions, making announcements.
 \item Record new videos live at the event (unless anyone wants to do it beforehand), lightly edit, and link to the updated materials.
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Go live with the new Training Center website}
+\vspace{0.25 cm}
+\begin{columns}
+\column{0.55\linewidth}
+\includegraphics[width=\linewidth]{old-website.png}
+
+\column{0.55\linewidth}
+\includegraphics[width=\linewidth]{new-website.png}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Diversify types of events}
@@ -97,6 +109,33 @@
 \vspace{7.25 cm}
 \end{center}
 
+\end{columns}
+\end{frame}
+
+\begin{frame}{\mbox{ }}
+\large
+New presenters: perpetual. I liked the pay-to-teach idea, and I'm willing to look for grants to implement that.
+\end{frame}
+
+\begin{frame}{Maintaining material: perpetual.}
+\vspace{0.5 cm}
+\begin{itemize}\setlength{\itemsep}{0.2 cm}
+\item Content can get out of date: \href{https://github.com/hsf-training/hsf-training-scikit-hep-webpage/pull/64}{\textcolor{blue}{hsf-training/hsf-training-scikit-hep-webpage\#64}}.
+\item In the Awkward Array project, we use \href{https://jupyterbook.org/}{\textcolor{blue}{JupyterBook}} to generate documentation so that \href{https://github.com/scikit-hep/awkward/actions/workflows/docs.yml}{\textcolor{blue}{it can be tested}} (and deployed) in each PR.
+\begin{center}
+\includegraphics[width=0.75\linewidth]{view-deployment.png}
+\end{center}
+\item We're currently using a Jekyll template from Software Carpentry that's no longer the one they're maintaining.
+\item If we have to transfer markdown anyway, perhaps we should go to Jupyter?
+\item Consider, for low-dependency tutorials: \textcolor{blue}{\small\url{https://jupyter.org/try-jupyter/}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Communication: switch to IRIS-HEP Slack (paid) for preparation?}
+\vspace{0.35 cm}
+\begin{columns}
+\column{1.1\linewidth}
+\includegraphics[width=\linewidth]{big-slack-comments.png}
 \end{columns}
 \end{frame}
 
